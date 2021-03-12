@@ -4,7 +4,7 @@ const WeBuildForYou = () => (
     <div className="container-xl">
         <section className="WeBuildForYou-content-area">
             <h1 className="WeBuildForYou-maine-title">WHAT CAN WE BUILD FOR YOU?</h1>
-            <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4s justify-content-center">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4s justify-content-center">
                 <div className="col">
                     <div className="weDo_cards card">
                         <img className="img-fluid" src="https://i.imgur.com/E0oqKFA.jpg" alt="" />

@@ -85,6 +85,17 @@ header {
   text-shadow: 2px 2px rgb(255, 255, 255);
 }
 
+@media (max-width: 600px) {
+  .header-contents h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .header-contents h2 {
+    font-size: 20px;
+  }
+}
+
 .header-contentsButton {
   background-color: red;
   padding: 10px 20px;
@@ -230,8 +241,9 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 }
 
 .weDo_cards img {
-  width: 50%;
+  width: 85%;
   margin: 0 auto;
+  border-radius: 20px;
 }
 
 .weDo_cards h1 {
@@ -239,6 +251,7 @@ $$$ renovations-area ended $$$ Contact Us-area style start
   font-weight: bold;
   color: #ca0547;
   text-shadow: 2px 2px #ffffff;
+  margin: 10px 0px !important;
 }
 
 @media (max-width: 600px) {
@@ -249,23 +262,23 @@ $$$ renovations-area ended $$$ Contact Us-area style start
     font-size: 20px;
   }
   .weDo_cards::before {
-    left: 50px;
+    left: 180px;
   }
 }
 
 @media (max-width: 400px) {
   .weDo_cards::before {
-    left: 20px;
+    left: 130px;
   }
 }
 @media (max-width: 315px) {
   .weDo_cards::before {
-    left: 6px;
+    left: 80px;
   }
 }
 @media (max-width: 274px) {
   .weDo_cards::before {
-    left: 0px;
+    left: 40px;
   }
 }
 

@@ -114,7 +114,7 @@ const SomeRenovations = () => {
             <section className="someRenovations-area">
                 <h3 className="someRenovations">Some of Our Renovations</h3>
                 <hr className="someRenoHr" />
-                <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4s justify-content-center">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4s justify-content-center">
                     {bookingList}
                 </div>
             </section>
