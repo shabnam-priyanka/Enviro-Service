@@ -1,4 +1,5 @@
 import emailjs from 'emailjs-com';
+import { useMediaQuery } from 'react-responsive';
 
 const Contact = () => {
     const sendEmail = (e) => {
@@ -20,12 +21,18 @@ const Contact = () => {
             }
         );
     };
+
+    const isJustMob = useMediaQuery({
+        query: '(min-device-width: 700px)'
+      })
+
     return (
         <div className="contact-area d-flex align-items-center">
             <section className="container-xl">
                 <div className="row">
                     <div className="col-md text-center">
-                        <h2>Contact Us</h2>
+                        {isJustMob? <h2>Contact Us</h2>: <h5>Contact Us</h5> }
+                        
                         <h5> Enviroottawa@gmail.com</h5>
 
                         {/* <h6> 1+ (613)-485-4117</h6> */}

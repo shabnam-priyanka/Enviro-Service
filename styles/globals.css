@@ -78,7 +78,7 @@ header {
   height: 600px;
 }
 
-.header-contents h2 {
+.slideHeadLine {
   font-size: 50px;
   font-weight: 900;
   color: rgb(202, 5, 71);
@@ -86,13 +86,13 @@ header {
 }
 
 @media (max-width: 600px) {
-  .header-contents h2 {
+  .slideHeadLine {
     font-size: 30px;
   }
 }
 @media (max-width: 400px) {
-  .header-contents h2 {
-    font-size: 20px;
+  .slideHeadLine {
+    /* font-size: 20px; */
   }
 }
 
@@ -527,10 +527,10 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 
 .contact-area {
   height: 650px;
-  /* color: #fff; */
+  padding: 20px 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .contact-area {
     height: auto;
   }
