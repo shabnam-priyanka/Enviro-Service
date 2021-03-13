@@ -322,14 +322,47 @@ $$$ renovations-area ended $$$ Contact Us-area style start
 
 /************************************************************
 ***************************Our Service*********************/
-.ourServiceText {
+
+.ourServiceCard {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
-  color: #44596d;
-  font-size: large;
 }
-/* .ourservice {
-  height: 450px;
-} */
+.ourServiceCard h5 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000, 3px 3px 5px blue;
+}
+
+.ourServiceCard button {
+  width: 100%;
+  padding: 5px 0px;
+  font-weight: bold;
+}
+
+@media (max-width: 1139px) {
+  .ourServiceCard {
+    height: 200px;
+  }
+  .ourServiceCard h5 {
+    font-size: 30px;
+  }
+  .ourServiceCard button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .ourServiceCard h5 {
+    font-size: 20px;
+  }
+  .ourServiceCard button {
+    width: 100%;
+  }
+}
+
 /**************************our service ends*********************/
 
 /* .
