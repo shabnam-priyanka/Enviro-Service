@@ -75,31 +75,31 @@ const SomeRenovations = () => {
 
     const bookingList = book.slice(0, 5).map((booking) => (
         <div key={booking.id} className="col">
-            <div className="card" style={{background:'#E4E5E9'}}> 
+            <div className="card" style={{ background: '#E4E5E9' }}>
                 <div className="card-image waves-effect waves-block waves-light">
                     <img className="activator" src={booking.img} />
                 </div>
                 <div className="card-content">
-                <h5 className="someReno_card-title text-truncate">{booking.name}</h5>
-                <hr/>
+                    <h5 className="someReno_card-title text-truncate">{booking.name}</h5>
+                    <hr />
                     <span className="card-title activator grey-text text-darken-4">
                         <i className="material-icons right">view more</i>
                     </span>
-                    <p>
-                        <div onClick={() => serviceNameSetCheckout(booking.name)}>
-                            <Link href="/bookings_checkout_calendar">
-                                <a>
-                                    <button className="someReno_card-btn">Book for Consultation</button>
-                                </a>
-                            </Link>
-                        </div>
-                    </p>
+
+                    <div onClick={() => serviceNameSetCheckout(booking.name)}>
+                        <Link href="/bookings_checkout_calendar">
+                            <a>
+                                <button className="someReno_card-btn">Book for Consultation</button>
+                            </a>
+                        </Link>
+                    </div>
+
                 </div>
                 <div className="card-reveal">
                     <span className="card-title grey-text text-darken-4">
-                    <h5 className="text-truncate">{booking.name}<i className="material-icons right">close</i></h5>
+                        <h5 className="text-truncate">{booking.name}<i className="material-icons right">close</i></h5>
                     </span>
-                    <hr/>
+                    <hr />
                     <p>
                         Here is some more information about this product that is only
                         revealed once clicked on.
